@@ -141,6 +141,23 @@ input:focus, textarea:focus {
 .project-card .link-button {
     transition: all 0.3s ease;
 }
+/* Additional styles for mobile menu */
+.mobile-menu {
+    display: none;
+}
+
+.mobile-menu.active {
+    display: block;
+}
+@media (max-width: 768px) {
+    .mobile-menu {
+        display: none;
+    }
+    
+    .mobile-menu.active {
+        display: block;
+    }
+}
 
 .project-card .link-button:hover {
     transform: scale(1.1);
