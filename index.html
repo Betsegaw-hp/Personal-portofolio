@@ -18,8 +18,21 @@
                     <a href="#about" class="text-neutral-600 hover:text-neutral-900">About</a>
                     <a href="#projects" class="text-neutral-600 hover:text-neutral-900">Projects</a>
                     <a href="#contact" class="text-neutral-600 hover:text-neutral-900">Contact</a>
+                    <a href="https://betsegaw.engineer" class="bg-neutral-800 text-white px-4 py-2 rounded-full hover:bg-neutral-700 transition duration-300">Professional Portfolio</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="menu-btn" class="text-neutral-800 focus:outline-none">
+                        <i class="fas fa-bars fa-2x"></i>
+                    </button>
                 </div>
             </div>
+        </div>
+        <div id="mobile-menu" class="mobile-menu md:hidden bg-white shadow-sm">
+            <a href="#home" class="block text-neutral-600 hover:text-neutral-900 px-4 py-2">Home</a>
+            <a href="#about" class="block text-neutral-600 hover:text-neutral-900 px-4 py-2">About</a>
+            <a href="#projects" class="block text-neutral-600 hover:text-neutral-900 px-4 py-2">Projects</a>
+            <a href="#contact" class="block text-neutral-600 hover:text-neutral-900 px-4 py-2">Contact</a>
+            <a href="https://betsegaw.engineer" class="block bg-neutral-800 text-white px-4 py-2 rounded-full hover:bg-neutral-700 transition duration-300">Professional Portfolio</a>
         </div>
     </nav>
 
@@ -251,6 +264,11 @@
         </div>
     </footer>
 
+    <script>
+        document.getElementById('menu-btn').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('active');
+        });
+    </script>
     <script src="script.js"></script>
 </body>
 </html> 
